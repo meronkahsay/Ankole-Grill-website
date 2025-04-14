@@ -1,0 +1,163 @@
+@font-face {
+    font-family: "typewriter";
+    src: url(JMH\ Typewriter.ttf);
+}
+
+body {
+    font-family: "typewriter";
+}
+
+.background-image {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    animation: fade 15s infinite;
+    background-position: center;
+    opacity: 0;
+    text-align: center;
+    font-size: 65px;
+    color: gray;
+    padding-top: 2%;
+}
+
+.welcome {
+    animation-delay: 0s;
+    background-image: url(https://cdn.prod.website-files.com/65aa1f78e2380ad0548de50d/65c34fee7c31fcb2f8c3700b_001-p-2000.jpg);
+}
+
+.discover {
+    animation-delay: 5s;
+    background-image: url(https://cdn.prod.website-files.com/65aa1f78e2380ad0548de50d/65e5b8b549a7aac5dba0e7d3_ankole_kilimani_nightlife.jpg);
+}
+
+.exprience {
+    animation-delay: 10s;
+    background-image: url(https://cdn.prod.website-files.com/65aa1f78e2380ad0548de50d/65c5f9644676e29dddf08c65_ankolegrill_t-bone-steak-2024-1.jpg);
+}
+
+.taste {
+    animation-delay: 15s;
+    background-image: url(https://cdn.prod.website-files.com/65aa1f78e2380ad0548de50d/65c3b0c67153d0056443f31e_ankolegrill_escobar1.jpg);
+}
+
+.savour {
+    animation-delay: 20s;
+    background-image: url(https://cdn.prod.website-files.com/65aa1f78e2380ad0548de50d/65cb61d8c46dc657819e1cc2_ankolegrill_slider.jpg);
+}
+
+@keyframes fade {
+
+    0%,
+    100% {
+        opacity: 0;
+    }
+
+    20%,
+    40% {
+        opacity: 1;
+    }
+
+    60%,
+    100% {
+        opacity: 0;
+    }
+}
+
+.ankilogo img {
+    width: 11%;
+}
+.navigation {
+    border-radius: 50px;
+    font-size: medium;
+    margin-left: 30%;
+     margin-top: -10%;
+    background-color: rgb(8, 8, 8);
+    width: 40%;
+    padding: 1%;
+    word-spacing: 15px;
+    position: fixed;
+
+}
+
+.navigation a {
+    text-decoration: none;
+    color: white;
+}
+
+.hamburger{
+  background-color: transparent;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.hamburger-menu {
+  position: relative;
+  display: inline-block;
+}
+
+.menu-content {
+  display: none;
+  position: absolute;
+  background-color:black;
+  min-width: 250px;
+  line-height: 0%;
+  bottom: 50px;
+  z-index: 1;
+  font-size: small;
+}
+
+.menu-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.menu-content a:hover {color: gray;}
+
+.hamburger-menu:hover .menu-content {display: block;}
+
+.hamburger-menu:hover .hamburger {background-color:white; color: gray; border-radius: 50%;}
+
+hr{
+color:gray;
+}
+#reservation{
+    border: none;
+    border-radius: 50px;
+    font-size: medium;
+    width: 130px;
+    height: 50px;
+    background-color: gray;
+}
+#reservation:hover{
+background-color: white;
+}
+
+
+.navigation span {
+    position: absolute;
+     left: 150%;
+    bottom: 30%;
+    width: 8%;
+    height: 70%;
+    color: white;
+    background-color: black;
+    border-radius: 50%;
+    font-size: 35px;
+    border: 1px solid gray;
+}
+.navigation span i{
+   position: absolute;
+    left: 25%;
+    top: 20%;
+}

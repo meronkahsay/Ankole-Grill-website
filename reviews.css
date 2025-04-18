@@ -9,86 +9,95 @@
 }
 
 body {
-    font-family: "typewriter";
-    margin: auto;
-}
-
-.background-image {
-    position: relative;
-    height: 100vh;
     overflow: hidden;
+    margin: auto;
+    font-family: "typewriter";
 }
 
-.background {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    animation: fade 15s infinite;
-    background-position: center;
-    opacity: 0;
+.reviews {
+    background-color: black;
+    color: white;
     text-align: center;
-    font-size: 65px;
-    color: gray;
-    padding-top: 2%;
+    height: 100vh;
+    padding: 5%;
 }
 
-.welcome {
-    animation-delay: 0s;
-    background-image: url(https://cdn.prod.website-files.com/65aa1f78e2380ad0548de50d/65c34fee7c31fcb2f8c3700b_001-p-2000.jpg);
+.ankiLogo-icon img {
+    width: 13%;
 }
 
-.discover {
-    animation-delay: 5s;
-    background-image: url(https://cdn.prod.website-files.com/65aa1f78e2380ad0548de50d/65e5b8b549a7aac5dba0e7d3_ankole_kilimani_nightlife.jpg);
+.feedback {
+    margin: 1% 30%;
+    width: 40%;
+    padding: 1%;
 }
 
-.exprience {
-    animation-delay: 10s;
-    background-image: url(https://cdn.prod.website-files.com/65aa1f78e2380ad0548de50d/65c5f9644676e29dddf08c65_ankolegrill_t-bone-steak-2024-1.jpg);
+.feedback h1 {
+    margin-top: 5%;
 }
 
-.taste {
-    animation-delay: 15s;
-    background-image: url(https://cdn.prod.website-files.com/65aa1f78e2380ad0548de50d/65c3b0c67153d0056443f31e_ankolegrill_escobar1.jpg);
+#quote {
+    font-size: 50px;
+    color: #D35400;
 }
 
-.savour {
-    animation-delay: 20s;
-    background-image: url(https://cdn.prod.website-files.com/65aa1f78e2380ad0548de50d/65cb61d8c46dc657819e1cc2_ankolegrill_slider.jpg);
+.feedback .fa-solid {
+    position: absolute;
 }
 
-@keyframes fade {
-
-    0%,
-    100% {
-        opacity: 0;
-    }
-
-    20%,
-    40% {
-        opacity: 1;
-    }
-
-    60%,
-    100% {
-        opacity: 0;
-    }
+.fa-less-than {
+    left: 27%;
+    top: 55%
 }
 
-.ankilogo img {
-    width: 11%;
+.fa-greater-than {
+    right: 27%;
+    top: 57%;
+}
+
+.fa-quote-left {
+    left: 30%;
+    top: 47%;
+}
+
+.fa-quote-right {
+    right: 27%;
+    top: 65%;
+}
+
+.allReview {
+    display: none;
+}
+
+.allReview.active {
+    display: block;
+}
+
+.reviews button {
+    border: none;
+    background-color: transparent;
+    color: rgb(95, 93, 93);
+    font-size: xx-large;
 }
 
 .social-media {
     position: absolute;
-    bottom: 850px;
-    left: 1200px;
+    bottom: 900px;
+    left: 1730px;
     background-color: transparent;
     color: gray;
     font-size: large;
     display: flex;
     gap: 30px;
+}
+
+
+.social-media i {
+    border: solid 1px rgb(216, 212, 212);
+    border-radius: 50%;
+    width: 100%;
+    padding: 20%;
+    color: rgb(204, 206, 206);
 }
 
 .social-media i:hover {
@@ -99,27 +108,17 @@ body {
     color: white;
 }
 
-.social-media i {
-    border: solid 1px rgb(216, 212, 212);
-    border-radius: 50%;
-    width: 100%;
-    padding: 20%;
-    color: rgb(168, 170, 170);
-}
-
 .navigation {
+    text-align: left;
     font-family: "poppins";
     border-radius: 50px;
     font-size: medium;
     margin-left: 30%;
-    margin-top: -7%;
+    margin-top: 8%;
     background-color: rgb(8, 8, 8);
-    width: 37%;
+    width: 42%;
     padding: 1%;
     word-spacing: 15px;
-    position: fixed;
-    
-
 }
 
 .navigation a {
@@ -134,13 +133,16 @@ body {
 .navigation a:visited {
     background-color: gray;
 }
-
 .hamburger {
     background-color: transparent;
-    color: rgb(77, 76, 76);
-    padding: 10px;
-    font-size: 16px;
+    color: rgb(109, 107, 107);
     border: none;
+    height: 40px;
+    width: 40px;
+}
+
+.hamburger i {
+    font-size: medium;
 }
 
 .hamburger-menu {
@@ -201,24 +203,13 @@ hr {
     transition: rotateY(180deg);
 }
 
-
-.navigation span {
-    position: absolute;
-    left: 169%;
-    bottom: 15%;
-    width: 8%;
-    height: 70%;
-    color: white;
-    background-color: black;
-    border-radius: 50%;
-    font-size: 35px;
-    border: 1px solid gray;
-}
-
 .navigation span i {
     position: absolute;
-    left: 25%;
-    top: 20%;
+    right: 5%;
+    border-radius: 50%;
+    font-size: 30px;
+    padding: 0.7%;
+    border: solid 1px;
 }
 
 .navigation span:hover {
@@ -252,17 +243,17 @@ hr {
     margin-left: 7%;
 }
 
-.clock {
+.openning-hours button {
     border: none;
-    color: rgb(92, 90, 90);
     padding: 10px;
-    font-size: 16px;
+    color: gray;
+    font-size: medium;
     background-color: transparent;
 }
 
-.openning-hours:hover .clock {
+.openning-hours button:hover {
     background-color: white;
-    color: #353434;
+    color: gray;
     border-radius: 50%;
 }
 
@@ -272,90 +263,126 @@ hr {
 
 
 
-
-
-@media only screen and (max-width: 430px) {
-    body {
+@media only screen and (max-width:430px) {
+    
+    @font-face {
         font-family: "typewriter";
-        margin: auto;
+        src: url(TypewriterSerial\ Regular.ttf);
     }
-
-    .background-image {
-        position: relative;
-        height: 100vh;
+    
+    @font-face {
+        font-family: "poppins";
+        src: url(Poppins-Regular.ttf);
+    }
+    
+    body {
         overflow: hidden;
+        margin: auto;
+        font-family: "typewriter";
     }
-
-    .background {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        background-size: cover;
-        animation: fade 15s infinite;
-        background-position: center;
-        opacity: 0;
+    
+    .reviews {
+        background-color: black;
+        color: white;
         text-align: center;
-        font-size: 25px;
-        color: gray;
-        padding-top: 12%;
+        height: 100vh;
+        padding: 5%;
+        font-size: 12px;
     }
-
-    .welcome {
-        animation-delay: 0s;
-        background-image: url(https://cdn.prod.website-files.com/65aa1f78e2380ad0548de50d/65c34fee7c31fcb2f8c3700b_001-p-2000.jpg);
-    }
-
-    .discover {
-        animation-delay: 5s;
-        background-image: url(https://cdn.prod.website-files.com/65aa1f78e2380ad0548de50d/65e5b8b549a7aac5dba0e7d3_ankole_kilimani_nightlife.jpg);
-    }
-
-    .exprience {
-        animation-delay: 10s;
-        background-image: url(https://cdn.prod.website-files.com/65aa1f78e2380ad0548de50d/65c5f9644676e29dddf08c65_ankolegrill_t-bone-steak-2024-1.jpg);
-    }
-
-    .taste {
-        animation-delay: 15s;
-        background-image: url(https://cdn.prod.website-files.com/65aa1f78e2380ad0548de50d/65c3b0c67153d0056443f31e_ankolegrill_escobar1.jpg);
-    }
-
-    .savour {
-        animation-delay: 20s;
-        background-image: url(https://cdn.prod.website-files.com/65aa1f78e2380ad0548de50d/65cb61d8c46dc657819e1cc2_ankolegrill_slider.jpg);
-    }
-
-    @keyframes fade {
-
-        0%,
-        100% {
-            opacity: 0;
-        }
-
-        20%,
-        40% {
-            opacity: 1;
-        }
-
-        60%,
-        100% {
-            opacity: 0;
-        }
-    }
-
-    .ankilogo img {
+    
+    .ankiLogo-icon img {
         width: 45%;
     }
-
+    
+    .feedback {
+        margin:25% 3%;
+        width: 90%;
+        padding: 1%;
+        line-height: 20px;
+        text-align: center;
+    }
+    
+    .feedback h1 {
+        margin-top: 5%;
+    }
+    
+    #quote {
+        font-size: 30px;
+        color: #D35400;
+    }
+    
+    .feedback .fa-solid {
+        position: absolute;
+    }
+    
+    .fa-less-than {
+        left: 2%;
+        top: 45%;
+    }
+    
+    .fa-greater-than {
+        right: 2%;
+        top: 45%;
+    }
+    
+    .fa-quote-left {
+        left: 3%;
+        top: 37%;
+    }
+    
+    .fa-quote-right {
+        right: 7%;
+        top: 58%;
+    }
+    
+    .allReview {
+        display: none;
+    }
+    
+    .allReview.active {
+        display: block;
+    }
+    
+    .reviews button {
+        border: none;
+        background-color: transparent;
+        color: rgb(95, 93, 93);
+        font-size: xx-large;
+    }
+    
+      
+    .social-media {
+        position: absolute;
+        bottom: 849px;
+        left: 380px;
+    }
+    
+    
+    .social-media i {
+        border: solid 1px rgb(216, 212, 212);
+        border-radius: 50%;
+        width: 100%;
+        padding: 20%;
+        color: rgb(204, 206, 206);
+    }
+    
+    
+    .social-media i:hover {
+        border: solid 1px rgb(248, 246, 246);
+        border-radius: 50%;
+        width: 100%;
+        padding: 20%;
+        color: white;
+    }
+    
     .navigation {
         font-family: "poppins";
         border-radius: 50px;
         font-size: medium;
-        margin-top: -27%;
-        margin-left: 25%;
+        margin-top: 40%;
+        margin-left: 20%;
         background-color: rgb(8, 8, 8);
-        position: fixed;
-        width: 49vw;
+        width: 55vw;
         padding: 5px;
         word-spacing: 4px;
     }
@@ -367,118 +394,120 @@ hr {
     .navigation hr:not(:first-child, :nth-child(6),:nth-child(4),:nth-child(8),:nth-child(12),:nth-child(16)){
         display: none;
     }
+    
     .navigation a {
         text-decoration: none;
         color: white;
     }
-
-    .menu-content a {
-        display: block;
-    }
-
+    
     .navigation a:hover {
         color: gray;
     }
-
+    
     .navigation a:visited {
         background-color: gray;
     }
-
+    
     .hamburger {
         background-color: transparent;
-        color: rgb(77, 76, 76);
-        padding: 10px;
-        font-size: 16px;
+        color: rgb(109, 107, 107);
+        height: 30px;
+        width: 30px;
         border: none;
+     
     }
-
+    
+    .hamburger i {
+        position: absolute;
+        top: 6px;
+        left: 9px;
+        font-size: medium;
+    }
+    
     .hamburger-menu {
         position: relative;
         display: inline-block;
     }
-
+    
     .menu-content {
         display: none;
         position: absolute;
         background-color: black;
-        min-width: 150px;
-        bottom: 90px;
+        min-width: 250px;
+        line-height: 0%;
+        bottom: 50px;
         z-index: 1;
         font-size: small;
-        border-radius: 10px;
     }
-
+    
     .menu-content a {
         color: white;
-        padding: 15px 6px;
+        padding: 12px 16px;
         text-decoration: none;
         display: block;
     }
-
+    
     .menu-content a:hover {
         color: gray;
     }
-
+    
     .hamburger-menu:hover .menu-content {
         display: block;
     }
-
+    
     .hamburger-menu:hover .hamburger {
         background-color: white;
         color: gray;
         border-radius: 50%;
     }
-
+    
     hr {
         color: gray;
     }
-
+    
     #reservation {
         border: none;
         border-radius: 50px;
         font-size: medium;
-        width: 120px;
+        width: 130px;
         height: 50px;
         background-color: gray;
     }
-
+    
     #reservation:hover {
         background-color: white;
     }
-
+    
     #reservation:hover {
         transition: rotateY(180deg);
     }
-
-
+    
     .navigation span {
         position: absolute;
-        left: 109%;
-        bottom: 125%;
-        width: 20%;
-        height: 70%;
-        color: white;
-        background-color: black;
+        left: 69%;
+        bottom: 15%;
         border-radius: 50%;
-        font-size: 29px;
-        border: 1px solid gray;
-    }
+       padding: 5%;
+       width: 30px;
 
+    }
+    
     .navigation span i {
         position: absolute;
-        left: 20%;
-        top: 15%;
+        left: 55%;
+        top: 20%;
+        font-size:30px;
     }
-
+    
     .navigation span:hover {
         background-color: #353434;
     }
-
+    
     .openning-hours {
         position: relative;
         display: inline-block;
     }
-
+    
     .openning-hours-content {
         display: none;
         position: absolute;
@@ -488,36 +517,36 @@ hr {
         color: rgb(235, 230, 230);
         min-width: 210px;
         border-radius: 20px;
-        font-size: smaller;
+        font-size: 10px;
     }
 
+    
     .openning-hours-content p {
         display: block;
         font-size: larger;
         padding-left: 7%;
     }
-
+    
     .openning-hours-content h1 {
         display: block;
         margin-left: 7%;
     }
-
-    .clock {
+    
+    .openning-hours button {
         border: none;
-        color: rgb(92, 90, 90);
         padding: 10px;
-        font-size: 16px;
+        color: gray;
+        font-size: medium;
         background-color: transparent;
     }
-
-    .openning-hours:hover .clock {
+    
+    .openning-hours button:hover {
         background-color: white;
-        color: #353434;
+        color: gray;
         border-radius: 50%;
     }
-
+    
     .openning-hours:hover .openning-hours-content {
         display: block;
     }
-
 }

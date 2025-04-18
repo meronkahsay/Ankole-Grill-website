@@ -1,0 +1,540 @@
+@font-face {
+    font-family: "poppins";
+    src: url(Poppins-Regular.ttf);
+}
+body {
+    margin: auto 0%;
+}
+.menu-Kitisuru {
+    display: flex;
+    height: 100vh;
+}
+.kitisuru-homepage {
+    background-image:linear-gradient(rgba(17,18,18,0.5), rgba(0,0,0,0.5)), url(https://cdn.prod.website-files.com/65aa1f78e2380ad0548de50d/65c4760165c03d467b650bcb_1.jpg);
+    width: 100vh;
+    text-align: center;
+    color: white;
+    font-size: 35px;
+    line-height: 0%;
+}
+.kitisuru {
+    margin-top: 4%;
+}
+
+.kitisuru img {
+    width: 25%;
+    margin-bottom: 10%;
+}
+.navigation {
+    font-family: "poppins";
+    border-radius: 50px;
+    font-size: medium;
+    margin-left: 3%;
+    margin-top: 12%;
+    background-color: rgb(8, 8, 8);
+    width: 37%;
+    padding: 1%;
+    word-spacing: 15px;
+    position: fixed;
+    text-align: left;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: white;
+}
+.navigation a:hover{
+  color: gray;
+}
+.navigation a:visited{
+    background-color: gray;
+}
+.hamburger{
+  background-color: transparent;
+  color: rgb(161, 159, 159);
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.hamburger-menu {
+  position: relative;
+  display: inline-block;
+}
+
+.menu-content {
+  display: none;
+  position: absolute;
+  background-color:black;
+  min-width: 250px;
+  line-height: 0%;
+  bottom: 50px;
+  z-index: 1;
+  font-size: small;
+}
+
+.menu-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.menu-content a:hover {color: gray;}
+
+.hamburger-menu:hover .menu-content {display: block;}
+
+.hamburger-menu:hover .hamburger {background-color:white; color: gray; border-radius: 50%;}
+
+hr{
+color:gray;
+}
+#reservation{
+    border: none;
+    border-radius: 50px;
+    font-size: medium;
+    width: 130px;
+    height: 50px;
+    background-color: gray;
+}
+#reservation:hover{
+background-color: white;
+}
+#reservation:hover{
+    transition: rotateY(180deg);
+}
+
+
+.navigation span {
+    position: absolute;
+     left: 235%;
+    bottom: 10%;
+    width: 8%;
+    height: 70%;
+    color: white;
+    background-color: black;
+    border-radius: 50%;
+    font-size: 35px;
+    border: 1px solid gray;
+}
+.navigation span i{
+   position: absolute;
+    left: 26%;
+    top: 20%;
+}
+.navigation span:hover {
+    background-color: #353434;
+}
+.openning-hours{
+    position: relative;
+    display: inline-block;
+    }
+    .openning-hours-content{
+    display: none;
+    position: absolute;
+    bottom: 40px;
+    background-color: white;
+    color: black;
+    min-width: 260px;
+    border-radius: 20px;
+    font-size: small;
+    }
+    .openning-hours-content p{
+        display: block;
+        font-size: larger;
+        padding-left: 7%;
+    }
+    .openning-hours-content h1{
+        display: block;
+        margin-left: 7%;
+    }
+    .openning-hours button{
+    border: none;
+    padding: 10px;
+    color: gray;
+    background-color: transparent;
+    }
+    .openning-hours button:hover{
+       background-color: white;
+       color: gray;
+       border-radius: 50%;
+    }
+    .openning-hours:hover .openning-hours-content{ 
+        display: block;
+    }
+.kitisuru p{
+    margin-top: 10%;
+}
+.red-kitisuru {
+    color: #D35400;
+    font-size: 70px;
+    margin-top: 9%;
+}
+
+.kitisuru-catagories {
+    background-color: black;
+    color: white;
+    padding: 0% 3%;
+    width: 100vh;
+    position: static;
+    overflow-x: auto;
+}
+
+.kitisuru-catagories nav {
+   height: 2vh;
+    padding: 1% 18%;
+    background-color: black;
+    top: 0;
+    display: flex;
+    gap: 5%;
+    position: sticky;
+    z-index: 1000;
+}
+.kitisuru-catagories a {
+    text-decoration: none;
+    color: gray;
+  
+}
+
+.breakfast {
+    margin-top: 8%;
+}
+
+.red-catagories {
+    color: #D35400;
+    word-spacing: 8px;
+    font-weight: bold;
+    margin-top: 2%;
+}
+
+.content {
+    display: flex;
+    gap: 68%;
+}
+
+.foodWithPrice {
+    margin-top: 5%;
+    display: flex;
+    gap: 2%;
+}
+
+.ankiLogo-icon {
+    width: 15%;
+}
+
+.ankiLogo-icon img {
+    width: 80%;
+}
+
+.price {
+    margin: 3% 0% 0% 25%;
+}
+
+.soup {
+    display: flex;
+    gap: 55%;
+}
+.priceOfsoups{
+    margin-left: -4.5%;
+}
+.foodWithPrice h1{
+    font-size: x-large;
+}
+.salads{
+    display:flex;
+    gap:15%;
+    line-height: 30px;
+}
+.salads h1{
+
+    font-size: x-large;
+}
+.priceOfbeef{
+    margin-left: -7.5%;
+}
+.priceOfchiken{
+    margin-left: -6%;
+}
+
+
+@media only screen and (max-width:430px){
+    
+    @font-face {
+        font-family: "poppins";
+        src: url(Poppins-Regular.ttf);
+    }
+    body {
+        margin: auto 0%;
+        height: 100vh;
+    
+    }
+    .menu-Kitisuru {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+    }
+    .kitisuru-homepage {
+        background-image:linear-gradient(rgba(17,18,18,0.5), rgba(0,0,0,0.5)), url(https://cdn.prod.website-files.com/65aa1f78e2380ad0548de50d/65c4760165c03d467b650bcb_1.jpg);
+        width: 430px;
+        height: 50vh;
+        background-size: cover;
+        text-align: center;
+        color: white;
+        font-size: 25px;
+        line-height: 0%;
+    }
+    .kitisuru {
+        margin-top: 4%;
+    }
+    
+    .kitisuru img {
+        width: 25%;
+        margin-bottom: 10%;
+    }
+
+    .navigation a:not(:first-child, #amenu, #areviews, #aevents, #acontacts, #alive) {
+        display: none;
+    }
+
+    .navigation hr:not(:first-child, :nth-child(6),:nth-child(4),:nth-child(8),:nth-child(12),:nth-child(16)){
+        display: none;
+    }
+    .navigation {
+        font-family: "poppins";
+        border-radius: 50px;
+        font-size: medium;
+        margin-left: 15%;
+        margin-top: 110%;
+        background-color: rgb(8, 8, 8);
+        width: 59%;
+        padding: 1%;
+        word-spacing: 15px;
+        position: fixed;
+    }
+    
+    .navigation a {
+        text-decoration: none;
+        color: white;
+    }
+    .navigation a:hover{
+      color: gray;
+    }
+    .navigation a:visited{
+        background-color: gray;
+    }
+    .hamburger{
+      background-color: transparent;
+      color: rgb(161, 159, 159);
+      padding: 16px;
+      font-size: 16px;
+      border: none;
+    }
+    
+    .hamburger-menu {
+      position: relative;
+      display: inline-block;
+    }
+    
+    .menu-content {
+      display: none;
+      position: absolute;
+      background-color:black;
+      min-width: 250px;
+      line-height: 0%;
+      bottom: 50px;
+      z-index: 1;
+      font-size: small;
+    }
+    
+    .menu-content a {
+      color: white;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+    .menu-content a:hover {color: gray;}
+    
+    .hamburger-menu:hover .menu-content {display: block;}
+    
+    .hamburger-menu:hover .hamburger {background-color:white; color: gray; border-radius: 50%;}
+    
+    hr{
+    color:gray;
+    }
+    #reservation{
+        border: none;
+        border-radius: 50px;
+        font-size: medium;
+        width: 130px;
+        height: 50px;
+        background-color: gray;
+    }
+    #reservation:hover{
+    background-color: white;
+    }
+    #reservation:hover{
+        transition: rotateY(180deg);
+    }
+    
+    
+    .navigation span {
+        position: absolute;
+        left: 99%;
+        bottom: 115%;
+        width: 15%;
+        height: 70%;
+        color: white;
+        background-color: black;
+        border-radius: 50%;
+        font-size: 35px;
+        border: 1px solid gray;
+    }
+    
+    .navigation span i {
+        position: absolute;
+        left: 13%;
+        top: 7%;
+    }
+    
+    .openning-hours{
+        position: relative;
+        display: inline-block;
+        }
+        .openning-hours-content {
+            display: none;
+            position: absolute;
+            bottom: 65px;
+            line-height: 7px;
+            background-color: rgb(20, 20, 20);
+            color: rgb(235, 230, 230);
+            min-width: 210px;
+            border-radius: 20px;
+            font-size: 10px;
+        }
+    
+        .openning-hours-content p{
+            font-size: larger;
+          
+        }
+        .openning-hours-content h1{  
+            margin-left: 7%;
+        }
+        .openning-hours button{
+        border: none;
+        padding: 10px;
+        color: gray;
+        background-color: transparent;
+        }
+        .openning-hours button:hover{
+           background-color: white;
+           color: gray;
+           border-radius: 50%;
+        }
+        .openning-hours:hover .openning-hours-content{ 
+            display: block;
+        }
+    .kitisuru p{
+        margin-top: 15%;
+    }
+    .red-kitisuru {
+        color: #D35400;
+        font-size: 50px;
+        margin-top: 9%;
+    }
+    
+    .kitisuru-catagories {
+        background-color: black;
+        color: white;
+        width: 403px;
+        position: static;
+        overflow-x: auto;
+        font-size: 15px;
+        height: 60vh;
+    }
+    
+    .kitisuru-catagories nav {
+       height: 2vh;
+       width: 400px;
+        margin-left: -18%;
+        background-color: black;
+        top: 0;
+        display: flex;
+        gap: 5%;
+        position: sticky;
+      
+    }
+    .kitisuru-catagories a {
+        text-decoration: none;
+        color: gray;
+      
+    }
+    
+    .breakfast {
+        margin-top: 8%;
+    }
+    
+    .red-catagories {
+        color: #D35400;
+        word-spacing: 8px;
+        font-weight: bold;
+        margin-top: 2%;
+    }
+    
+    .content {
+        display: flex;
+        gap: 29%;
+    }
+    
+    .foodWithPrice {
+        margin-top: 5%;
+        display: flex;
+        gap: 0%;
+        width: 400px;
+    }
+    
+    .ankiLogo-icon {
+        width: 30%;
+    }
+    
+    .ankiLogo-icon img {
+        width: 50%;
+    }
+    
+    .price {
+        margin-left: 3px;
+    }
+    
+    .soup {
+        display: flex;
+        gap: 5%;
+    }
+    .foodWithPrice h1{
+        font-size:13px;
+        margin-left: -16%;
+    }
+    .foodWithPrice p{
+        width: 150px;
+        margin-left: -5%;
+    }
+    .salads{
+        width: 400px;
+        display:flex;
+        gap:1%;
+        line-height: 30px;
+    }
+    .salads h1{
+      margin-left: -9px;
+        font-size: small;
+    }
+    .priceOfsalad{
+  margin-left: 100px;
+    }
+    .priceOfbeef{
+      width: 40%;
+    }
+    .priceOfchiken{
+        margin-left: 0%;
+    }
+    .typesOfsalad{
+        width: 200px;
+    }
+}

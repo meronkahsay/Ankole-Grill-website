@@ -1,0 +1,248 @@
+@font-face {
+    font-family: "poppins";
+    src: url(Poppins-Regular.ttf);
+}
+body{
+    margin: auto;
+}
+.reservation {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    color: white;
+}
+
+.karibu {
+    background: linear-gradient(rgba(17,18,18,0.5), rgba(0,0,0,0.8)), url(https://i.pinimg.com/736x/c5/60/0d/c5600da8b6e39d4d45f79d42673043b1.jpg);
+    background-repeat: no-repeat;
+    text-align: center;
+    width: 50vw;
+    background-size: cover;
+    padding-top: 2%;
+    font-size: 40px;
+    line-height: 0%;
+}
+
+#ankole-logo {
+    margin-top: 2%;
+    margin-bottom: 15%;
+}
+
+#ankole-logo img {
+    width: 22%;
+}
+
+#red-reservation {
+    color: orangered;
+    font-size: 60px;
+}
+#karibu{
+    margin-top: 23%;
+}
+.form {
+    width: 45vw;
+    background-color: black;
+    padding: 3% 4%;
+    
+}
+
+form {
+    height: 75vh;
+    padding: 1% ;
+    box-shadow: 0px 1px 10px -5px gray;
+    width: 43vw;
+    border-radius: 20px;
+}
+label{
+    margin: 1%;
+}
+input {
+    padding: 1%;
+    width: 42vw;
+    height: 2.7vh;
+    margin: 1% 2% 3% 0%;
+    border: none;
+    border: 1px solid #F8f8f861;
+    color-scheme: dark;
+}
+input:focus{
+    outline: none;
+    border:green 1px solid;
+}
+select:focus{
+    outline: none;
+    border: 1px solid rgb(23, 176, 236)
+}
+select {
+    margin:1% 0 1% 0;
+    width: 100%;
+    height: 2.5vw;
+    background-color: rgb(39, 38, 38);
+    border: none;
+    border: 1px solid;
+}
+
+#submit {
+    width: 43vw;
+    height: 6.5vh;
+    color:#251201 ;
+    background-color: #E5C187;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-top: -1%;
+}
+#submit:hover{
+    background-color:#a88650;
+    color: white;
+}
+
+.navigation {
+    font-family: "poppins";
+    border-radius: 50px;
+    font-size: medium;
+    margin-left: 30%;
+    margin-top: -8%;
+    background-color: rgb(8, 8, 8);
+    width: 36.%;
+    padding: 1%;
+    word-spacing: 15px;
+    position: fixed;
+    font-family: "poppins";
+}
+
+.navigation a {
+    text-decoration: none;
+    color: white;
+}
+
+.navigation a:hover {
+    color: gray;
+}
+
+.navigation a:visited {
+    background-color: gray;
+}
+
+.hamburger {
+    background-color: transparent;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+
+.hamburger-menu {
+    position: relative;
+    display: inline-block;
+}
+
+.menu-content {
+    display: none;
+    position: absolute;
+    background-color: black;
+    min-width: 250px;
+    line-height: 0%;
+    bottom: 50px;
+    z-index: 1;
+    font-size: small;
+}
+
+.menu-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.menu-content a:hover {
+    color: gray;
+}
+
+.hamburger-menu:hover .menu-content {
+    display: block;
+}
+
+.hamburger-menu:hover .hamburger {
+    background-color: white;
+    color: gray;
+    border-radius: 50%;
+}
+
+hr {
+    color: gray;
+}
+
+#reservation {
+    border: none;
+    border-radius: 50px;
+    font-size: medium;
+    width: 130px;
+    height: 50px;
+    background-color: gray;
+}
+
+#reservation:hover {
+    background-color: white;
+}
+
+#reservation:hover {
+    transition: rotateY(180deg);
+}
+
+
+.navigation span {
+    position: absolute;
+    left: 160%;
+    bottom: 20%;
+    width: 8%;
+    height: 70%;
+    color: white;
+    background-color: black;
+    border-radius: 50%;
+    font-size: 35px;
+    border: 1px solid gray;
+}
+
+.navigation span i {
+    position: absolute;
+    left: 25%;
+    top: 20%;
+}
+
+.openning-hours{
+    position: relative;
+    display: inline-block;
+    }
+    .openning-hours-content{
+    display: none;
+    position: absolute;
+    bottom: 35px;
+    background-color: white;
+    color: black;
+    min-width: 250px;
+    border-radius: 20px;
+    font-size: small;
+    }
+    .openning-hours-content p{
+        display: block;
+        font-size: larger;
+        padding-left: 7%;
+    }
+    .openning-hours-content h1{
+        display: block;
+        margin-left: 7%;
+    }
+    .openning-hours button{
+    border: none;
+    padding: 10px;
+    color: gray;
+    background-color: transparent;
+    }
+    .openning-hours button:hover{
+       background-color: white;
+       color: gray;
+       border-radius: 50%;
+    }
+    .openning-hours:hover .openning-hours-content{ 
+        display: block;
+    }

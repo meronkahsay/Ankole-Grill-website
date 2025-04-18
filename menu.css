@@ -9,86 +9,36 @@
 }
 
 body {
-    font-family: "typewriter";
     margin: auto;
 }
 
-.background-image {
-    position: relative;
-    height: 100vh;
-    overflow: hidden;
+.menu-homepage {
+    display: flex;
 }
 
-.background {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    animation: fade 15s infinite;
-    background-position: center;
-    opacity: 0;
-    text-align: center;
-    font-size: 65px;
-    color: gray;
-    padding-top: 2%;
-}
-
-.welcome {
-    animation-delay: 0s;
-    background-image: url(https://cdn.prod.website-files.com/65aa1f78e2380ad0548de50d/65c34fee7c31fcb2f8c3700b_001-p-2000.jpg);
-}
-
-.discover {
-    animation-delay: 5s;
-    background-image: url(https://cdn.prod.website-files.com/65aa1f78e2380ad0548de50d/65e5b8b549a7aac5dba0e7d3_ankole_kilimani_nightlife.jpg);
-}
-
-.exprience {
-    animation-delay: 10s;
-    background-image: url(https://cdn.prod.website-files.com/65aa1f78e2380ad0548de50d/65c5f9644676e29dddf08c65_ankolegrill_t-bone-steak-2024-1.jpg);
-}
-
-.taste {
-    animation-delay: 15s;
-    background-image: url(https://cdn.prod.website-files.com/65aa1f78e2380ad0548de50d/65c3b0c67153d0056443f31e_ankolegrill_escobar1.jpg);
-}
-
-.savour {
-    animation-delay: 20s;
-    background-image: url(https://cdn.prod.website-files.com/65aa1f78e2380ad0548de50d/65cb61d8c46dc657819e1cc2_ankolegrill_slider.jpg);
-}
-
-@keyframes fade {
-
-    0%,
-    100% {
-        opacity: 0;
-    }
-
-    20%,
-    40% {
-        opacity: 1;
-    }
-
-    60%,
-    100% {
-        opacity: 0;
-    }
-}
-
-.ankilogo img {
-    width: 11%;
+.menu-homepage a {
+    text-decoration: none;
+    color: white;
 }
 
 .social-media {
     position: absolute;
-    bottom: 850px;
-    left: 1200px;
+    bottom: 830px;
+    left: 1180px;
     background-color: transparent;
     color: gray;
     font-size: large;
     display: flex;
     gap: 30px;
+}
+
+
+.social-media i {
+    border: solid 1px rgb(216, 212, 212);
+    border-radius: 50%;
+    width: 100%;
+    padding: 20%;
+    color: rgb(204, 206, 206);
 }
 
 .social-media i:hover {
@@ -99,13 +49,6 @@ body {
     color: white;
 }
 
-.social-media i {
-    border: solid 1px rgb(216, 212, 212);
-    border-radius: 50%;
-    width: 100%;
-    padding: 20%;
-    color: rgb(168, 170, 170);
-}
 
 .navigation {
     font-family: "poppins";
@@ -118,8 +61,6 @@ body {
     padding: 1%;
     word-spacing: 15px;
     position: fixed;
-    
-
 }
 
 .navigation a {
@@ -137,8 +78,8 @@ body {
 
 .hamburger {
     background-color: transparent;
-    color: rgb(77, 76, 76);
-    padding: 10px;
+    color: rgb(109, 107, 107);
+    padding: 16px;
     font-size: 16px;
     border: none;
 }
@@ -252,17 +193,16 @@ hr {
     margin-left: 7%;
 }
 
-.clock {
+.openning-hours button {
     border: none;
-    color: rgb(92, 90, 90);
     padding: 10px;
-    font-size: 16px;
+    color: gray;
     background-color: transparent;
 }
 
-.openning-hours:hover .clock {
+.openning-hours button:hover {
     background-color: white;
-    color: #353434;
+    color: gray;
     border-radius: 50%;
 }
 
@@ -270,92 +210,111 @@ hr {
     display: block;
 }
 
+.kitisuru {
+    background: linear-gradient(rgba(17, 18, 18, 0.5), rgba(0, 0, 0, 0.5)), url(https://cdn.prod.website-files.com/65aa1f78e2380ad0548de50d/65c34fee7c31fcb2f8c3700b_001-p-2000.jpg);
+    height: 100vh;
+    color: white;
+    width: 50%;
+    text-align: center;
+}
+
+.branches {
+    margin-top: 45%;
+    line-height: 0%;
+}
+
+.kilimani {
+    background-image: linear-gradient(rgba(17, 18, 18, 0.5), rgba(0, 0, 0, 0.5)), url(https://cdn.prod.website-files.com/65aa1f78e2380ad0548de50d/65e5a29a2a2b1c4a493fff75_ankolegrill_Kilimani-Nights.jpg);
+    width: 50%;
+    color: white;
+    text-align: center;
+}
+
+#ankole-logo {
+    margin-top: 5%;
+    position: absolute;
+    left: 44.5%;
+}
+
+#ankole-logo img {
+    width: 55%;
+}
+
+.red-text {
+    font-family: "typewriter";
+    color: #D35400;
+    font-size: xx-large;
+}
+
+.heading {
+    font-size: 60px;
+    font-weight: bold;
+}
 
 
 
 
-@media only screen and (max-width: 430px) {
-    body {
+@media only screen and (max-width:430px){
+    
+    @font-face {
         font-family: "typewriter";
+        src: url(TypewriterSerial\ Regular.ttf);
+    }
+    
+    @font-face {
+        font-family: "poppins";
+        src: url(Poppins-Regular.ttf);
+    }
+    
+    body {
         margin: auto;
     }
-
-    .background-image {
-        position: relative;
-        height: 100vh;
-        overflow: hidden;
+    
+    .menu-homepage {
+        display: flex;
+        flex-direction: column;
     }
-
-    .background {
+    
+    .menu-homepage a {
+        text-decoration: none;
+        color: white;
+    }
+    
+    .social-media {
         position: absolute;
-        width: 100%;
-        height: 100%;
-        background-size: cover;
-        animation: fade 15s infinite;
-        background-position: center;
-        opacity: 0;
-        text-align: center;
-        font-size: 25px;
+        bottom: 930px;
+        left: 240px;
+        background-color: transparent;
         color: gray;
-        padding-top: 12%;
+        font-size: large;
+        display: flex;
+        flex-direction: column;
     }
-
-    .welcome {
-        animation-delay: 0s;
-        background-image: url(https://cdn.prod.website-files.com/65aa1f78e2380ad0548de50d/65c34fee7c31fcb2f8c3700b_001-p-2000.jpg);
+    
+    
+    .social-media i {
+        border: solid 1px rgb(216, 212, 212);
+        border-radius: 50%;
+        width: 100%;
+        padding: 20%;
+        color: rgb(204, 206, 206);
     }
-
-    .discover {
-        animation-delay: 5s;
-        background-image: url(https://cdn.prod.website-files.com/65aa1f78e2380ad0548de50d/65e5b8b549a7aac5dba0e7d3_ankole_kilimani_nightlife.jpg);
+    
+    .social-media i:hover {
+        border: solid 1px rgb(248, 246, 246);
+        border-radius: 50%;
+        width: 100%;
+        padding: 20%;
+        color: white;
     }
-
-    .exprience {
-        animation-delay: 10s;
-        background-image: url(https://cdn.prod.website-files.com/65aa1f78e2380ad0548de50d/65c5f9644676e29dddf08c65_ankolegrill_t-bone-steak-2024-1.jpg);
-    }
-
-    .taste {
-        animation-delay: 15s;
-        background-image: url(https://cdn.prod.website-files.com/65aa1f78e2380ad0548de50d/65c3b0c67153d0056443f31e_ankolegrill_escobar1.jpg);
-    }
-
-    .savour {
-        animation-delay: 20s;
-        background-image: url(https://cdn.prod.website-files.com/65aa1f78e2380ad0548de50d/65cb61d8c46dc657819e1cc2_ankolegrill_slider.jpg);
-    }
-
-    @keyframes fade {
-
-        0%,
-        100% {
-            opacity: 0;
-        }
-
-        20%,
-        40% {
-            opacity: 1;
-        }
-
-        60%,
-        100% {
-            opacity: 0;
-        }
-    }
-
-    .ankilogo img {
-        width: 45%;
-    }
-
     .navigation {
         font-family: "poppins";
         border-radius: 50px;
         font-size: medium;
-        margin-top: -27%;
+        margin-top: -20%;
         margin-left: 25%;
         background-color: rgb(8, 8, 8);
-        position: fixed;
-        width: 49vw;
+        width: 55vw;
         padding: 5px;
         word-spacing: 4px;
     }
@@ -371,114 +330,110 @@ hr {
         text-decoration: none;
         color: white;
     }
-
-    .menu-content a {
-        display: block;
-    }
-
+    
     .navigation a:hover {
         color: gray;
     }
-
+    
     .navigation a:visited {
         background-color: gray;
     }
-
+    
     .hamburger {
         background-color: transparent;
-        color: rgb(77, 76, 76);
-        padding: 10px;
+        color: rgb(109, 107, 107);
+        padding: 16px;
         font-size: 16px;
         border: none;
     }
-
+    
     .hamburger-menu {
         position: relative;
         display: inline-block;
     }
-
+    
     .menu-content {
         display: none;
         position: absolute;
         background-color: black;
-        min-width: 150px;
-        bottom: 90px;
+        min-width: 250px;
+        line-height: 0%;
+        bottom: 80px;
         z-index: 1;
         font-size: small;
-        border-radius: 10px;
     }
-
+    
     .menu-content a {
         color: white;
-        padding: 15px 6px;
+        padding: 12px 16px;
         text-decoration: none;
         display: block;
     }
-
+    
     .menu-content a:hover {
         color: gray;
     }
-
+    
     .hamburger-menu:hover .menu-content {
         display: block;
     }
-
+    
     .hamburger-menu:hover .hamburger {
         background-color: white;
         color: gray;
         border-radius: 50%;
     }
-
+    
     hr {
         color: gray;
     }
-
+    
     #reservation {
         border: none;
         border-radius: 50px;
         font-size: medium;
-        width: 120px;
+        width: 130px;
         height: 50px;
         background-color: gray;
     }
-
+    
     #reservation:hover {
         background-color: white;
     }
-
+    
     #reservation:hover {
         transition: rotateY(180deg);
     }
-
-
+    
+    
     .navigation span {
         position: absolute;
-        left: 109%;
-        bottom: 125%;
-        width: 20%;
+        left: 169%;
+        bottom: 15%;
+        width: 8%;
         height: 70%;
         color: white;
         background-color: black;
         border-radius: 50%;
-        font-size: 29px;
+        font-size: 35px;
         border: 1px solid gray;
     }
-
+    
     .navigation span i {
         position: absolute;
-        left: 20%;
-        top: 15%;
+        left: 25%;
+        top: 20%;
     }
-
+    
     .navigation span:hover {
         background-color: #353434;
     }
-
+    
     .openning-hours {
         position: relative;
         display: inline-block;
     }
-
+    
     .openning-hours-content {
         display: none;
         position: absolute;
@@ -491,33 +446,76 @@ hr {
         font-size: smaller;
     }
 
+    
     .openning-hours-content p {
         display: block;
         font-size: larger;
         padding-left: 7%;
     }
-
+    
     .openning-hours-content h1 {
         display: block;
         margin-left: 7%;
     }
-
-    .clock {
+    
+    .openning-hours button {
         border: none;
-        color: rgb(92, 90, 90);
         padding: 10px;
-        font-size: 16px;
+        color: gray;
         background-color: transparent;
     }
-
-    .openning-hours:hover .clock {
+    
+    .openning-hours button:hover {
         background-color: white;
-        color: #353434;
+        color: gray;
         border-radius: 50%;
     }
-
+    
     .openning-hours:hover .openning-hours-content {
         display: block;
     }
-
+    
+    .kitisuru {
+        background: linear-gradient(rgba(17, 18, 18, 0.5), rgba(0, 0, 0, 0.5)), url(https://cdn.prod.website-files.com/65aa1f78e2380ad0548de50d/65c34fee7c31fcb2f8c3700b_001-p-2000.jpg);
+        background-size: cover;
+        height: 50vh;
+        color: white;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .branches {
+        margin-top: 55%;
+        line-height: 0%;
+    }
+    
+    .kilimani {
+        background-image: linear-gradient(rgba(17, 18, 18, 0.5), rgba(0, 0, 0, 0.5)), url(https://cdn.prod.website-files.com/65aa1f78e2380ad0548de50d/65e5a29a2a2b1c4a493fff75_ankolegrill_Kilimani-Nights.jpg);
+        background-size: cover;
+        width: 100%;
+        height: 50vh;
+        color: white;
+        text-align: center;
+    }
+    
+    #ankole-logo {
+        margin-top: 15%;
+        position: absolute;
+        left: 35%;
+    }
+    
+    #ankole-logo img {
+        width: 50%;
+    }
+    
+    .red-text {
+        font-family: "typewriter";
+        color: #D35400;
+        font-size: large;
+    }
+    
+    .heading {
+        font-size: 40px;
+        font-weight: bold;
+    }
 }

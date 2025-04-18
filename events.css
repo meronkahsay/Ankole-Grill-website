@@ -1,0 +1,491 @@
+@font-face {
+    font-family: "poppins";
+    src: url(Poppins-Regular.ttf);
+}
+
+body {
+    margin: auto 0;
+}
+
+.events {
+    display: flex;
+    height: 100vh;
+    text-align: center;
+    color: white;
+}
+
+.events img {
+    height: 100vh;
+}
+
+.events h1 {
+    font-size: 50px;
+    line-height: 0%;
+}
+
+.pavilion {
+    color: gray;
+
+}
+
+#ankole-logo img {
+    width: 55%;
+}
+
+#ankole-logo {
+    position: fixed;
+    left: 43%;
+    top: 10%;
+}
+
+.yellowadress {
+    color: #FFC30B;
+}
+
+.accra {
+    background-image: linear-gradient(rgba(17, 18, 18, 0.5), rgba(0, 0, 0, 0.5)), url(https://cdn.prod.website-files.com/65aa1f78e2380ad0548de50d/65d4a8fe2b90d2cc28fd4a80_accra.jpg);
+    padding: 21% 8%;
+    background-repeat: no-repeat;
+}
+
+.nairobi {
+    background-image: linear-gradient(rgba(17, 18, 18, 0.5), rgba(0, 0, 0, 0.5)), url(https://cdn.prod.website-files.com/65aa1f78e2380ad0548de50d/65e86d89c0ebe6000d4a549a_nairobi_pavilion_2024.jpg);
+    padding: 21% 6%;
+    background-repeat: no-repeat;
+
+}
+
+.zanzibar {
+    background-image: linear-gradient(rgba(17, 18, 18, 0.5), rgba(0, 0, 0, 0.5)), url(https://cdn.prod.website-files.com/65aa1f78e2380ad0548de50d/65d4a8fe4fa225ceb84e736c_Zanzibar.jpg);
+    padding: 23% 8%;
+    background-repeat: no-repeat;
+}
+
+.social-media {
+    position: absolute;
+    bottom: 830px;
+    left: 1180px;
+    background-color: transparent;
+    color: gray;
+    font-size: large;
+    display: flex;
+    gap: 30px;
+}
+
+
+.social-media i {
+    border: solid 1px rgb(216, 212, 212);
+    border-radius: 50%;
+    width: 100%;
+    padding: 20%;
+    color: rgb(204, 206, 206);
+}
+
+.social-media i:hover {
+    border: solid 1px rgb(248, 246, 246);
+    border-radius: 50%;
+    width: 100%;
+    padding: 20%;
+    color: white;
+}
+
+.navigation {
+    font-family: "poppins";
+    border-radius: 50px;
+    font-size: medium;
+    margin-left: 30%;
+    margin-top: -10%;
+    background-color: rgb(8, 8, 8);
+    width: 37%;
+    padding: 1%;
+    word-spacing: 15px;
+    position: fixed;
+
+}
+
+.navigation a {
+    text-decoration: none;
+    color: white;
+}
+
+.navigation a:hover {
+    color: gray;
+}
+
+.navigation a:visited {
+    background-color: gray;
+}
+
+.hamburger {
+    background-color: transparent;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+
+.hamburger-menu {
+    position: relative;
+    display: inline-block;
+}
+
+.menu-content {
+    display: none;
+    position: absolute;
+    background-color: black;
+    min-width: 250px;
+    line-height: 0%;
+    bottom: 50px;
+    z-index: 1;
+    font-size: small;
+}
+
+.menu-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.menu-content a:hover {
+    color: gray;
+}
+
+.hamburger-menu:hover .menu-content {
+    display: block;
+}
+
+.hamburger-menu:hover .hamburger {
+    background-color: white;
+    color: gray;
+    border-radius: 50%;
+}
+
+hr {
+    color: gray;
+}
+
+#reservation {
+    border: none;
+    border-radius: 50px;
+    font-size: medium;
+    width: 130px;
+    height: 50px;
+    background-color: gray;
+}
+
+#reservation:hover {
+    background-color: white;
+}
+
+#reservation:hover {
+    transition: rotateY(180deg);
+}
+
+
+.navigation span {
+    position: absolute;
+    left: 169%;
+ 
+    width: 8%;
+    height: 70%;
+    color: white;
+    background-color: black;
+    border-radius: 50%;
+    font-size: 35px;
+    border: 1px solid gray;
+}
+
+.navigation span i {
+    position: absolute;
+    left: 25%;
+    top: 20%;
+}
+
+.navigation span:hover {
+    background-color: #353434;
+}
+
+.openning-hours{
+    position: relative;
+    display: inline-block;
+    }
+    .openning-hours-content{
+    display: none;
+    position: absolute;
+    bottom: 35px;
+    background-color: white;
+    color: black;
+    min-width: 250px;
+    border-radius: 20px;
+    font-size: small;
+    }
+    .openning-hours-content p{
+        display: block;
+        font-size: larger;
+        padding-left: 7%;
+    }
+    .openning-hours-content h1{
+        display: block;
+        margin-left: 7%;
+    }
+    .openning-hours button{
+    border: none;
+    padding: 10px;
+    color: gray;
+    background-color: transparent;
+    }
+    .openning-hours button:hover{
+       background-color: white;
+       color: gray;
+       border-radius: 50%;
+    }
+    .openning-hours:hover .openning-hours-content{ 
+        display: block;
+    }
+
+
+    @media only screen and(max-width:430px) {
+        @font-face {
+    font-family: "poppins";
+    src: url(Poppins-Regular.ttf);
+}
+
+body {
+    margin: auto 0;
+}
+
+.events {
+    display: flex;
+    flex-direction: column;
+    width:100%;
+ 
+}
+
+
+
+.events h1 {
+    font-size: 50px;
+    line-height: 0%;
+}
+
+.pavilion {
+    color: gray;
+
+}
+
+#ankole-logo img {
+    width: 100vw;
+}
+
+#ankole-logo {
+    position: fixed;
+    left: 43%;
+    top: 10%;
+}
+
+.yellowadress {
+    color: #FFC30B;
+}
+
+.accra {
+    background-image: linear-gradient(rgba(17, 18, 18, 0.5), rgba(0, 0, 0, 0.5)), url(https://cdn.prod.website-files.com/65aa1f78e2380ad0548de50d/65d4a8fe2b90d2cc28fd4a80_accra.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.nairobi {
+    background-image: linear-gradient(rgba(17, 18, 18, 0.5), rgba(0, 0, 0, 0.5)), url(https://cdn.prod.website-files.com/65aa1f78e2380ad0548de50d/65e86d89c0ebe6000d4a549a_nairobi_pavilion_2024.jpg);
+    background-repeat: no-repeat;
+
+}
+
+.zanzibar {
+    background-image: linear-gradient(rgba(17, 18, 18, 0.5), rgba(0, 0, 0, 0.5)), url(https://cdn.prod.website-files.com/65aa1f78e2380ad0548de50d/65d4a8fe4fa225ceb84e736c_Zanzibar.jpg);
+    background-repeat: no-repeat;
+}
+
+.social-media {
+    position: absolute;
+    bottom: 830px;
+    left: 1180px;
+    background-color: transparent;
+    color: gray;
+    font-size: large;
+    display: flex;
+    gap: 30px;
+}
+
+
+.social-media i {
+    border: solid 1px rgb(216, 212, 212);
+    border-radius: 50%;
+    width: 100%;
+    padding: 20%;
+    color: rgb(204, 206, 206);
+}
+
+.social-media i:hover {
+    border: solid 1px rgb(248, 246, 246);
+    border-radius: 50%;
+    width: 100%;
+    padding: 20%;
+    color: white;
+}
+
+.navigation {
+    font-family: "poppins";
+    border-radius: 50px;
+    font-size: medium;
+    margin-left: 30%;
+    margin-top: -10%;
+    background-color: rgb(8, 8, 8);
+    width: 37%;
+    padding: 1%;
+    word-spacing: 15px;
+    position: fixed;
+
+}
+
+.navigation a {
+    text-decoration: none;
+    color: white;
+}
+
+.navigation a:hover {
+    color: gray;
+}
+
+.navigation a:visited {
+    background-color: gray;
+}
+
+.hamburger {
+    background-color: transparent;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+
+.hamburger-menu {
+    position: relative;
+    display: inline-block;
+}
+
+.menu-content {
+    display: none;
+    position: absolute;
+    background-color: black;
+    min-width: 250px;
+    line-height: 0%;
+    bottom: 50px;
+    z-index: 1;
+    font-size: small;
+}
+
+.menu-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.menu-content a:hover {
+    color: gray;
+}
+
+.hamburger-menu:hover .menu-content {
+    display: block;
+}
+
+.hamburger-menu:hover .hamburger {
+    background-color: white;
+    color: gray;
+    border-radius: 50%;
+}
+
+hr {
+    color: gray;
+}
+
+#reservation {
+    border: none;
+    border-radius: 50px;
+    font-size: medium;
+    width: 130px;
+    height: 50px;
+    background-color: gray;
+}
+
+#reservation:hover {
+    background-color: white;
+}
+
+#reservation:hover {
+    transition: rotateY(180deg);
+}
+
+
+.navigation span {
+    position: absolute;
+    left: 169%;
+ 
+    width: 8%;
+    height: 70%;
+    color: white;
+    background-color: black;
+    border-radius: 50%;
+    font-size: 35px;
+    border: 1px solid gray;
+}
+
+.navigation span i {
+    position: absolute;
+    left: 25%;
+    top: 20%;
+}
+
+.navigation span:hover {
+    background-color: #353434;
+}
+
+.openning-hours{
+    position: relative;
+    display: inline-block;
+    }
+    .openning-hours-content{
+    display: none;
+    position: absolute;
+    bottom: 35px;
+    background-color: white;
+    color: black;
+    min-width: 250px;
+    border-radius: 20px;
+    font-size: small;
+    }
+    .openning-hours-content p{
+        display: block;
+        font-size: larger;
+        padding-left: 7%;
+    }
+    .openning-hours-content h1{
+        display: block;
+        margin-left: 7%;
+    }
+    .openning-hours button{
+    border: none;
+    padding: 10px;
+    color: gray;
+    background-color: transparent;
+    }
+    .openning-hours button:hover{
+       background-color: white;
+       color: gray;
+       border-radius: 50%;
+    }
+    .openning-hours:hover .openning-hours-content{ 
+        display: block;
+    }
+
+    }

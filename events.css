@@ -245,24 +245,24 @@ hr {
     }
 
 
-    @media only screen and(max-width:430px) {
+    @media only screen and (max-width:430px) {
         @font-face {
-    font-family: "poppins";
+               font-family: "poppins";
     src: url(Poppins-Regular.ttf);
+}
+*{
+    box-sizing: border-box;
 }
 
 body {
     margin: auto 0;
 }
 
-.events {
+.events{
     display: flex;
     flex-direction: column;
-    width:100%;
  
 }
-
-
 
 .events h1 {
     font-size: 50px;
@@ -275,13 +275,13 @@ body {
 }
 
 #ankole-logo img {
-    width: 100vw;
+    width: 45vw;
 }
 
 #ankole-logo {
     position: fixed;
-    left: 43%;
-    top: 10%;
+    left: 25%;
+    top:5%;
 }
 
 .yellowadress {
@@ -291,7 +291,7 @@ body {
 .accra {
     background-image: linear-gradient(rgba(17, 18, 18, 0.5), rgba(0, 0, 0, 0.5)), url(https://cdn.prod.website-files.com/65aa1f78e2380ad0548de50d/65d4a8fe2b90d2cc28fd4a80_accra.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100vw 100vh ;
 }
 
 .nairobi {
@@ -307,21 +307,23 @@ body {
 
 .social-media {
     position: absolute;
-    bottom: 830px;
-    left: 1180px;
+    bottom: 930px;
+    left: 230px;
     background-color: transparent;
     color: gray;
     font-size: large;
     display: flex;
+    flex-direction: column;
     gap: 30px;
 }
-
+.accra,.nairobi,.zanzibar{
+    min-height: 100vh;
+    padding-top: 70%;
+}
 
 .social-media i {
     border: solid 1px rgb(216, 212, 212);
-    border-radius: 50%;
-    width: 100%;
-    padding: 20%;
+    padding: 10px;
     color: rgb(204, 206, 206);
 }
 
@@ -337,14 +339,21 @@ body {
     font-family: "poppins";
     border-radius: 50px;
     font-size: medium;
-    margin-left: 30%;
-    margin-top: -10%;
+    margin-left: 20%;
+    margin-top: -30%;
     background-color: rgb(8, 8, 8);
-    width: 37%;
+    width: 60%;
     padding: 1%;
     word-spacing: 15px;
     position: fixed;
 
+}
+.navigation a:not(:first-child, #amenu, #areviews, #aevents, #acontacts, #alive) {
+    display: none;
+}
+
+.navigation hr:not(:first-child, :nth-child(6),:nth-child(4),:nth-child(8),:nth-child(12),:nth-child(16)){
+    display: none;
 }
 
 .navigation a {
@@ -454,16 +463,18 @@ hr {
     position: relative;
     display: inline-block;
     }
-    .openning-hours-content{
-    display: none;
-    position: absolute;
-    bottom: 35px;
-    background-color: white;
-    color: black;
-    min-width: 250px;
-    border-radius: 20px;
-    font-size: small;
+    .openning-hours-content {
+        display: none;
+        position: absolute;
+        bottom: 65px;
+        line-height: 15px;
+        background-color: rgb(20, 20, 20);
+        color: rgb(235, 230, 230);
+        min-width: 210px;
+        border-radius: 20px;
+        font-size: smaller;
     }
+
     .openning-hours-content p{
         display: block;
         font-size: larger;

@@ -246,3 +246,136 @@ hr {
     .openning-hours:hover .openning-hours-content{ 
         display: block;
     }
+
+
+
+    @media only screen and (max-width:430px) {
+        body{
+            max-width: 430px;
+        }
+        .reservation {
+            display: flex;
+            flex-direction: column;
+            width: 100vw;
+            font-size: medium;
+            height: 100vh;
+            color: white;
+        }
+        #ankole-logo {
+            margin-top: 2%;
+            margin-bottom: 15%;
+        }
+        #red-reservation {
+            color: orangered;
+            font-size: 40px;
+        }
+       
+        
+        #ankole-logo img {
+            width: 48%;
+        }
+        .karibu {
+            background: linear-gradient(rgba(17,18,18,0.5), rgba(0,0,0,0.8)), url(https://i.pinimg.com/736x/c5/60/0d/c5600da8b6e39d4d45f79d42673043b1.jpg);
+            background-repeat: no-repeat;
+            text-align: center;
+            width: 100vw;
+            background-size: cover;
+            padding-top: 2%;
+            font-size: 40px;
+            line-height: 0%;
+            height: 100vh;
+        }
+        .form {
+            padding: 3% 0% 0% 4%;
+            width: 96vw;
+            background-color: black;
+            margin: 0%;
+            max-width: 430px;
+            height: 100vh;
+            
+        }
+        
+        form {
+            height: 70vh;
+            padding: 5% 1% ;
+            box-shadow: 0px 1px 10px -5px gray;
+            width: 90vw;
+            border-radius: 20px;
+        }
+        label{
+            margin: 1%;
+        }
+        input {
+            padding: 1%;
+            width: 85vw;
+            height: 4vh;
+            margin: 1% 2% 3% 0%;
+            border: none;
+            border: 1px solid #F8f8f861;
+            color-scheme: dark;
+        }
+        input:focus{
+            outline: none;
+            border:green 1px solid;
+        }
+        select:focus{
+            outline: none;
+            border: 1px solid rgb(23, 176, 236)
+        }
+        select {
+            margin:1% 0 1% 0;
+            width: 87vw;
+            height: 10vw;
+            background-color: rgb(39, 38, 38);
+            border: none;
+            border: 1px solid;
+        }
+        
+        #submit {
+            width: 85vw;
+            height: 5vh;
+            color:#251201 ;
+            background-color: #E5C187;
+            cursor: pointer;
+            border-radius: 10px;
+            margin-top: 5%;
+            margin-left: 2%;
+        }
+        .navigation {
+            font-family: "poppins";
+            border-radius: 50px;
+            font-size: medium;
+            margin-top: -15%;
+            margin-left: 20%;
+            background-color: rgb(8, 8, 8);
+            width: 55vw;
+            padding: 5px;
+            word-spacing: 4px;
+        }
+    
+        .navigation a:not(:first-child, #amenu, #areviews, #aevents, #acontacts, #alive) {
+            display: none;
+        }
+    
+        .navigation hr:not(:first-child, :nth-child(6),:nth-child(4),:nth-child(8),:nth-child(12),:nth-child(16)){
+            display: none;
+        }
+        .navigation span {
+            position: absolute;
+            left: 110%;
+            bottom: 100%;
+            width: 18%;
+            height: 70%;
+            color: white;
+            background-color: black;
+            border-radius: 50%;
+            font-size: 35px;
+            border: 1px solid gray;
+        }
+        
+        .navigation span i {
+            position: absolute;
+            left: 15%;
+            top: 12%;
+        }
+    }
